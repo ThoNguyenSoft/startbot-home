@@ -1,1 +1,1 @@
-# landing-crypto
+# crypto-ai
