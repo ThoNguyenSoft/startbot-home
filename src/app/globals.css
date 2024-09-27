@@ -5,25 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
 @layer base {
   :root {
-    /* --background: #efefef; */
-    /* --background: #f9f5f3; */
-    /* --background: #f7f7f7; */
     --background: #eeeeee;
-    /* --background-third: rgb(20 20 20 / 100%); */
     --background-third: #141414;
     --background-contrast: #1e1e1e;
 
-    /* --bg-navbar: #2e2e2e; */
     --bg-navbar: #2e2e2ede;
-    /* --bg-elevated: #f5f5f5; */
-    /* --bg-elevated: #fafafa; */
     --bg-elevated: #fafafa;
     --menu: #8e8e8e;
     --table-background-hover: #dbeafe;
-    /* --divider: #ebebf0; */
-    /* --divider: rgba(234, 234, 255, 0.12); */
-    /* --divider: #5a5a5a; */
-    /* --divider: #d6d6d6; */
     --divider: #e0e0e0;
     --divider-title: #5a5a5a;
 
@@ -45,8 +34,6 @@
     --border-third: rgb(255 255 255 / 10%);
     --input: 214.3 31.8% 91.4%;
 
-    /* --primary: #2563eb;
-    --primary-hover: #3b82f6; */
     --primary: #f27300;
     --primary-yellow: #dcf593;
     --text-primary: #bf5b00;
@@ -58,11 +45,6 @@
     --secondary-hover: #e2e8f0;
     --secondary-disable: #d1d5db;
     --secondary-foreground: 222.2 47.4% 11.2%;
-    /* stock color */
-    --stock-red: rgb(255 58 80 / 100%);
-    --stock-green: rgb(0 167 58 / 100%);
-    --stock-yellow: rgb(254 201 15 / 100%);
-    --stock-color: rgb(255 255 255 / 100%);
 
     --black: #000000;
     --black-secondary: #1e293b;
@@ -86,7 +68,6 @@
     --content: calc(100vh - var(--navbar));
     --content-drawer: calc(100vh - 100px);
     --content-drawer-chat-mobile: calc(100vh - 140px);
-    /* status */
     --success: #008b0e;
     --error: var(--destructive-hover);
     --default: #a1a1aa;
@@ -112,21 +93,15 @@
   }
 
   .dark {
-    /* --background: 224 71% 4%; */
-    /* --background: #eaeaffde; */
-    /* --background: #1e1e1e; */
     --background: #000000;
-    /* --background-third: rgb(20 20 20 / 100%); */
     --background-third: #141414;
     --background-contrast: #eeeeee;
     --bg-elevated: #2e2e2e;
     --menu: #121212;
 
-    /* --bg-navbar: #2e2e2e; */
     --bg-navbar: #000000c4;
     --foreground: 213 31% 91%;
 
-    /* --divider: #5a5a5a; */
     --divider: #2f2f2f;
     --divider-title: #d6d6d6;
 
@@ -145,8 +120,6 @@
     --border-third: rgb(255 255 255 / 10%);
     --input: 216 34% 17%;
 
-    /* --primary: 210 40% 98%; */
-    /* --primary: #2563eb; */
     --success: #005709;
 
     --primary: #bf5b00;
@@ -170,21 +143,12 @@
     --text-default-contrast: #212121;
     --secondary: 222.2 47.4% 11.2%;
     --secondary-foreground: 210 40% 98%;
-    /* stock color */
-    --stock-red: rgb(255 58 80 / 100%);
-    --stock-green: rgb(0 167 58 / 100%);
-    --stock-yellow: rgb(254 201 15 / 100%);
-    /* --stock-color: rgb(255 255 255 / 100%); */
-    --stock-color: #0b0b0b;
 
     --color-classic-text-up: #0bdf39;
     --color-classic-text-down: #f23645;
     --color-classic-text-ceil: #f23aff;
     --color-classic-text-floor: #00c9ff;
     --color-classic-text-ref: #fdff12;
-
-    /* --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%; */
 
     --ring: 216 34% 17%;
 
@@ -211,23 +175,6 @@
   }
 }
 
-@layer components {
-  .gradient-border {
-    @apply rounded-[8px] border-2; /* Apply Tailwind's border width and rounded utilities */
-    border-image: linear-gradient(to bottom, #222222, #7c7c7c) 1;
-  }
-}
-
-@layer utilities {
-  .gradient-border {
-    background:
-      linear-gradient(to top, #222222, #222222) padding-box,
-      linear-gradient(to top, #222222, #7c7c7c) border-box;
-    border: 1px solid transparent;
-  }
-}
-
-/* Slim scrollbar */
 ::-webkit-scrollbar {
   width: 2px;
   height: 2px;

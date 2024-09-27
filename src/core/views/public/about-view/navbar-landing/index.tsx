@@ -2,7 +2,7 @@
 
 import { APP_CONFIG } from '@/core/configs/app-config'
 import Link from 'next/link'
-import LogoStockIcon from 'public/icons/LogoStockIcon'
+import LogoMain from 'public/icons/LogoMain'
 import { Fragment, useEffect } from 'react'
 
 const NavbarLanding = () => {
@@ -24,7 +24,7 @@ const NavbarLanding = () => {
         <div className='w-full max-w-[1274px] border-b-[0.4px] border-white px-4 py-6 backdrop-blur-sm'>
           <div className='flex w-full items-center justify-between'>
             <Link href='#' className=''>
-              <LogoStockIcon fill='#EBEBEB' size={106} />
+              <LogoMain fill='#EBEBEB' size={106} />
             </Link>
             <div className='flex items-center justify-center gap-[56px] text-2xl text-[#FFFFFF]'>
               {arrListRef.map((item, index) => (
@@ -54,7 +54,7 @@ const NavbarLanding = () => {
 export default NavbarLanding
 
 export const arrListRef = [
-  { title: 'About us', extent: <LogoStockIcon fill='#EBEBEB' size={136} />, link: '#' },
+  { title: 'About us', extent: <LogoMain fill='#EBEBEB' size={136} />, link: '#' },
   { title: 'Solutions', link: '#' },
   { title: 'Technology', link: '#' },
   { title: 'Team', link: '#' }
